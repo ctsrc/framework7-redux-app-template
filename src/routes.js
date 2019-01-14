@@ -1,56 +1,49 @@
 import HomeContainer from './containers/HomeContainer';
-import AboutContainer from './containers/AboutContainer';
-import FormContainer from './containers/FormContainer';
-import DynamicRouteContainer from './containers/DynamicRouteContainer';
-import NotFoundContainer from './containers/DefaultRouteContainer';
-import PanelLeftContainer from './containers/PanelLeftContainer';
-import PanelRightContainer from './containers/PanelRightContainer';
-import LoginContainer from './containers/LoginContainer';
-import PopupContainer from './containers/PopupContainer';
+import Page2Container from './containers/Page2Container';
+import Page3Container from './containers/Page3Container';
+import CatalogContainer from './containers/CatalogContainer';
+import ItemContainer from './containers/ItemContainer';
 
 export default [
+  /*
+   * Main containers. For these we specify that transition should not animate.
+   */
   {
     path: '/',
     component: HomeContainer,
-  },
-  {
-    path: '/panel-left/',
-    panel: {
-      component: PanelLeftContainer,
+    options:
+    {
+      animate: false,
     },
   },
   {
-    path: '/panel-right/',
-    panel: {
-      component: PanelRightContainer,
+    path: '/page2/',
+    component: Page2Container,
+    options:
+    {
+      animate: false,
     },
   },
   {
-    path: '/about/',
-    component: AboutContainer,
+    path: '/page3/',
+    component: Page3Container,
+    options:
+    {
+      animate: false,
+    },
   },
+
+  /*
+   * Everything else. These should (and do) have animated transition.
+   */
   {
-    path: '/form/',
-    component: FormContainer,
-  },
-  {
-    path: '/dynamic-route/blog/:blogId/post/:postId/',
-    component: DynamicRouteContainer,
-  },
-  {
-    path: '/login/',
-    loginScreen: {
-      component: LoginContainer
-    }
-  },
-  {
-    path: '/popup/',
+    path: '/catalog/:itemId/',
     popup: {
-      component: PopupContainer
+      component: ItemContainer,
     }
   },
   {
-    path: '(.*)',
-    component: NotFoundContainer,
+    path: '/catalog/',
+    component: CatalogContainer,
   },
 ];
