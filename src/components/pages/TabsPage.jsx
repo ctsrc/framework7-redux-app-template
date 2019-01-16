@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Statusbar, View, Views, Tab, Tabs, Toolbar, Link } from 'framework7-react';
+import { Page, View, Views, Tab, Tabs, Toolbar, Link } from 'framework7-react';
 
 // TODO: Have number of notifications as state of icon.
 export default ({onTabHome, onTabPage2, onTabPage3}) => {

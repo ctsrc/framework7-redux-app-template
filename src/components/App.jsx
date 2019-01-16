@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux'
-import { App, Statusbar, View, Page, Toolbar, Link } from 'framework7-react';
+import { App, Statusbar, View } from 'framework7-react';
 
 import routes from '../routes';
 import { store, stateKernel } from '../store';
