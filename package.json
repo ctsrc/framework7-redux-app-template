@@ -2,6 +2,7 @@
   "name": "framework7-react-app-template",
   "version": "3.0.0",
   "private": true,
+  "homepage" : "https://ctsrc.github.io/framework7-redux-app-template/",
   "dependencies": {
     "framework7": "^3.6.5",
     "framework7-icons": "^2.1.1",
