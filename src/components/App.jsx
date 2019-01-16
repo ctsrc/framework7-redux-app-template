@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux'
-import { App, Statusbar, View, Views, Toolbar, Link } from 'framework7-react';
+import { App, Statusbar, View, Page, Toolbar, Link } from 'framework7-react';
 
 import routes from '../routes';
 import { store, stateKernel } from '../store';
@@ -33,18 +33,7 @@ export default () => {
     <Provider store={store}>
       <App params={f7params}>
         <Statusbar />
-
-        <Views tabs className="ios-edges">
-          <View main tab tabActive id="home-view" url="/" />
-          <View tab id="page2-view" url="/page2/" />
-          <View tab id="page3-view" url="/page3/" />
-
-          <Toolbar tabbar bottomMd>
-            <Link tabLink="#home-view" tabLinkActive href="/">Home</Link>
-            <Link tabLink="#page2-view" href="/page2/">Tab 2</Link>
-            <Link tabLink="#page3-view" href="/page3/">Tab 3</Link>
-          </Toolbar>
-        </Views>
+        <View id="main-view" url="/tabs/" main className="ios-edges" />
       </App>
     </Provider>
   );

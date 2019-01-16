@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
 import HomePage from '../components/pages/HomePage';
-import { goToCatalog } from '../actions/CatalogActions';
+import { goToCatalog } from '../actions/HomeCatalogActions';
 import { goToItem23 } from '../actions/ItemActions';
 
 const mapDispatchToProps = (dispatch) =>
