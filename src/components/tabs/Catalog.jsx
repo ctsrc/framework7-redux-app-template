@@ -1,9 +1,9 @@
 import React from 'react';
-import { Page, Navbar, Card } from 'framework7-react';
+import { Navbar, Card } from 'framework7-react';
 
 export default ({ onGoBackFromCatalog }) => (
-  <Page>
+  <div>
     <Navbar title="Catalog" backLink="Back" onBackClick={onGoBackFromCatalog} />
     <Card outline content="Placeholder for catalog contents." />
-  </Page>
+  </div>
 );

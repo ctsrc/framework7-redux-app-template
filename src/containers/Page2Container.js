@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import Page2Page from '../components/pages/Page2Page';
+import Page2 from '../components/tabs/Page2';
 import { goToCatalog } from '../actions/Page2CatalogActions';
 import { goToItem23 } from '../actions/ItemActions';
 
@@ -12,4 +12,4 @@ const mapDispatchToProps = (dispatch) =>
   };
 };
 
-export default connect(null, mapDispatchToProps)(Page2Page);
+export default connect(null, mapDispatchToProps)(Page2);

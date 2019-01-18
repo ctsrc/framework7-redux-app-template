@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import HomePage from '../components/pages/HomePage';
+import Home from '../components/tabs/Home';
 import { goToCatalog } from '../actions/HomeCatalogActions';
 import { goToItem23 } from '../actions/ItemActions';
 
@@ -12,4 +12,4 @@ const mapDispatchToProps = (dispatch) =>
   };
 };
 
-export default connect(null, mapDispatchToProps)(HomePage);
+export default connect(null, mapDispatchToProps)(Home);

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import CatalogPage from '../components/pages/CatalogPage';
+import Catalog from '../components/tabs/Catalog';
 import { goBackFromCatalog } from '../actions/HomeCatalogActions';
 
 const mapDispatchToProps = (dispatch) =>
@@ -10,4 +10,4 @@ const mapDispatchToProps = (dispatch) =>
   };
 };
 
-export default connect(null, mapDispatchToProps)(CatalogPage);
+export default connect(null, mapDispatchToProps)(Catalog);
